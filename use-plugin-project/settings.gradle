@@ -1,0 +1,13 @@
+pluginManagement {
+  repositories {
+      maven {
+        url "http://localhost:8081/nexus/content/groups/public"
+        allowInsecureProtocol true
+      }
+      gradlePluginPortal()
+  }
+}
+
+rootProject.name = 'use-plugin-project'
+include('lib')
+
